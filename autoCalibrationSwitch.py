@@ -14,8 +14,11 @@ ser = serial.Serial(
 command = bytearray([0xff, 0x01, 0x79, 0x00, 0x00, 0x00, 0x00, 0x00, 0x79])
 ser.write(command)
 
-file = open("autoCalibration.conf", "w+")
+file = open("autoCalibration.conf", "r")
 value=file.read()
+file.close()
+file = open("autoCalibration.conf", "w")
+
 if (value=="1"):
     print("Auto Calibration wurde deaktiviert")
     file.write("0")
