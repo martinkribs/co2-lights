@@ -11,7 +11,7 @@ gelb=27
 rot=17
 k=1
 
-logging.basicConfig(filename='/home/wzJvhTLp/co2.txt',level=logging.DEBUG)
+logging.basicConfig(filename='/home/pi/co2.txt',level=logging.DEBUG)
 
 GPIO.setwarnings(False)
 #GPIO.cleanup()
