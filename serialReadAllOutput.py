@@ -20,6 +20,17 @@ GPIO.setup(gruen, GPIO.OUT)
 GPIO.setup(gelb, GPIO.OUT)
 GPIO.setup(rot, GPIO.OUT)
 
+#Test
+GPIO.output(gruen,GPIO.HIGH)
+time.sleep(1)
+GPIO.output(gruen,GPIO.LOW)
+GPIO.output(gelb,GPIO.HIGH)
+time.sleep(1)
+GPIO.output(gelb,GPIO.LOW)
+GPIO.output(rot,GPIO.HIGH)
+time.sleep(1)
+GPIO.output(rot,GPIO.LOW)
+
 def setAmpel(wert):
     if 400<wert<1000:
         GPIO.output(gruen,GPIO.HIGH)
