@@ -1,1 +1,1 @@
-@reboot sleep 30 && sh /home/pi/co2-lights-main/watchdog.sh
+@reboot sleep 20 && sh /home/pi/co2-lights-main/watchdog.sh
